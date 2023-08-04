@@ -30,21 +30,21 @@ export default function Buttons({ setTime, time, currentTime }) {
   }
 
   function handleReset() {
-    playSoundReset();
+    // playSoundReset();
     setTime(0);
   }
-  async function handleSound() {
+  async function playSound() {
     const { sound } = await Audio.Sound.createAsync(
-      require("../../assets/pick-92276.mp3")
+      require("../../assets/mouse-click-117076.mp3")
     );
     await sound.playAsync();
   }
-  async function playSoundReset() {
+  /*   async function playSoundReset() {
     const { soundReset } = await Audio.Sound.createAsync(
-      require("../../assets/mouse-click-117076.mp3")
+      require("../../assets/pick-92276.mp3")
     );
     await soundReset.playAsync();
-  }
+  } */
 
   return (
     <View>
