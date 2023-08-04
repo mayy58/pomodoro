@@ -6,9 +6,12 @@ import {
   View,
   Button,
   SafeAreaView,
+  TouchableOpacity,
 } from "react-native";
 import { useState } from "react";
 import Header from "./src/components/Header";
+import Timer from "./src/components/Timer";
+import Buttons from "./src/components/Buttons";
 
 const colors = ["#F7DC6F", "#A2D9CE", "#D7BDE2"];
 
@@ -19,15 +22,25 @@ export default function App() {
 
   console.log(currentTime);
   return (
-    <SafeAreaView style={styles.container}>
-      <View style={{ paddingTop: Platform.OS === "android" && 30 }}>
+    <SafeAreaView
+      style={[styles.container, { backgroundColor: colors[currentTime] }]}
+    >
+      <View
+        style={{
+          flex: 1,
+          paddingHorizontal: 15,
+          paddingTop: Platform.OS === "android" && 30,
+        }}
+      >
         <Text style={styles.text}>Pomodoro</Text>
-        <Text style={styles.text}>{time}</Text>
+
         <Header
           currentTime={currentTime}
           setCurrentTime={setCurrentTime}
           setTime={setTime}
         />
+        <Timer time={time} />
+        <Buttons setTime={setTime} time={time} currentTime={currentTime} />
       </View>
     </SafeAreaView>
   );
