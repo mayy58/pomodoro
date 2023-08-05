@@ -14,9 +14,9 @@ Este repositorio contiene una aplicación Pomodoro creada con Expo Go y React Na
 
 # Fotos de la App
 <div style="display: flex; justify-content: space-between;">
-<img src="./pomodoro3.png" alt="Captura de pantalla de la App Pomodoro" width="300"  />
-<img src="./pomodoro1.png" alt="Captura de pantalla de la App Pomodoro" width="300"  />
-<img src="./pomodoro2.png" alt="Captura de pantalla de la App Pomodoro" width="300"  />
+<img src="./pomodoro3.png" alt="Captura de pantalla de la App Pomodoro" width="200"  />
+<img src="./pomodoro1.png" alt="Captura de pantalla de la App Pomodoro" width="200"  />
+<img src="./pomodoro2.png" alt="Captura de pantalla de la App Pomodoro" width="200"  />
 </div>
 
 # Agradecimiento
